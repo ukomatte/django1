@@ -1,0 +1,115 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'main/css/animate.min.css' %}"/>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="style-top-nav">
+            <ul class="nav-button">
+                <li> <a href=""><img src="{% static 'main/img/logo.png' %}" width="18px" height="18px" alt=""></a> </li>
+                <li> <a href="{% url 'home' %}">Home</a> </li>
+                <li> <a href="{% url 'about' %}">About us</a> </li>
+                <li> <a href="{% url 'news_home' %}">News</a> </li>
+                <li> <a href="">Contacts</a> </li>
+                <li> <a href="{% url 'create' %}">Add</a> </li>
+                <li> <a href="">Support</a> </li>
+                <li> <a href="{% url 'product' %}">Product</a> </li>
+                <li> <a href=""><i class="bi bi-bag"></i></a> </li>
+                <li> <a href=""><i class="bi bi-search"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="homepage">
+        <ul>
+            <li>
+                <p>Shop early for the best selection of holiday favorites.
+                <a href="https://www.apple.com/store">Shop now</a>
+                </p>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+        <nav class="list">
+            <div class="aboutus">
+                <ul class="col2">
+                    <li><p>$9 two-hour delivery on eligible Apple products in most metros. Offer is not available on customized Mac, engraved products, and for certain order types including orders paid for with financing or by bank transfer. Delivery times vary according to your selected delivery address, availability of your items, and the time of day you place your order. Find a store to view local store hours or see checkout for estimated delivery. A signature is required for delivery. Drivers may ask for verbal confirmation of receipt from a safe distance to satisfy the signature requirement.</p></li>
+                    <li><p>To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.</p></li>
+                    <li><p>Available for qualifying applicants in the United States.</p></li>
+                    <li><p>Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p></li>
+                    <li><p>Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.</p></li>
+                    <li><p>Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</p></li>
+                </ul>
+            </div>
+            <hr size=3px width=100%>
+            <div class="info">
+                <ul class="col1">
+                    <li>
+                        <h1>Shop and Learn</h1>
+                        <p>Store</p>
+                        <p>Mac</p>
+                        <p>iPad</p>
+                        <p>iPhone</p>
+                    </li>
+                </ul>
+                <ul class="col1">
+                    <li>
+                        <h1>Services</h1>
+                        <p>Apple Music</p>
+                        <p>Apple TV+</p>
+                        <p>Apple Fitness+</p>
+                        <p>Apple News+</p>
+                        <p>Apple Arcade</p>
+                        <p>iCloud</p>
+                    </li>
+                </ul>
+                <ul class="col1">
+                    <li>
+                        <p>Store</p>
+                        <p>Store</p>
+                        <p>Store</p>
+                        <p>Store</p>
+                    </li>
+                </ul>
+                <ul class="col1">
+                    <li>
+                        <p>Store</p>
+                        <p>Store</p>
+                        <p>Store</p>
+                        <p>Store</p>
+                    </li>
+                </ul>
+                <ul class="col1">
+                    <li>
+                        <p>Store</p>
+                        <p>Store</p>
+                        <p>Store</p>
+                        <p>Store</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </main> 
+    <script type="text/javascript" src={% static "main/js/jquery-3.6.0.min.js" %}></script>
+    <script type="text/javascript" src={% static "main/js/main.js" %}></script>
+    <script type="text/javascript" src={% static "main/js/wow.js" %}></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+</html>

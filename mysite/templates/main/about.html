@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}SITE2{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Auxiliary page</h1>
+        <p>Also not an HTML site</p>
+        <a href="{% url 'home' %}" class="btn btn-primary" role="button">Home</a>
+    </div>
+{% endblock %}

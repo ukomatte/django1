@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="product">
+        <h1>Sweeeet</h1>
+        <p>Everyone</p>
+            <div id="img-container" class="animate__animated animate__fadeInDown">
+                <img id="img360" src="static/main/img/logo1.png" width="210" height="200" alt="">
+                <img id="img360" src="static/main/img/logo2.png" width="210" height="200" alt="">
+                <img id="img360" src="static/main/img/logo3.png" width="210" height="200" alt="">
+            </div>
+    </div>
+    <div class="features">
+        <h1>iPhone Oh. So.</h1>
+        <p>I don't know which one in a row</p>
+        <p><a href="{% url 'about' %}">About us ></a>
+        <a href="{% url 'news_home' %}">News ></a></p>
+            <div class="features-img">
+                <img class="wow bounceInRight" src="static/main/img/home1.png" width="1068" height="420" alt="">
+            </div>
+    </div>
+    <div class="add">
+        <h1>iPhone #0</h1>
+        <p>Traaash</p>
+        <img class="wow bounceInLeft" src="static/main/img/home2.png" width="1068" height="420" alt="">
+    </div>
+    <div class="store">
+        <img id="imghome1" src="static/main/img/homeimg1.jpg" width="730" height="500" alt="">
+        <img id="imghome1" src="static/main/img/homeimg2.jpg" width="730" height="500" alt="">
+    </div>
+{% endblock %}
