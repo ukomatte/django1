@@ -17,5 +17,5 @@ def backend(request):
 def product(request):
     return render(request, 'main/product.html')
 
-def product(request):
+def airpods(request):
     return render(request, 'main/airpods.html')
