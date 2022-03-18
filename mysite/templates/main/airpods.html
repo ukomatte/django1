@@ -3,32 +3,43 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<main>
-    <nav id="air-localnav">
-        <div>
-            <div class="air-localnav-background"></div>
-            <div class="air-localnav-content">
-                <div class="air-localnav-title">
-                    <p>AirPods</p>
-                </div>
-                <div class="air-localnav-menu">
-                    <div class="air-locaknav-section">
-                        <ul class="air-localnav-items">
-                            <li>
-                                <p>item</p>
-                            </li>
-                            <li>
-                                <p>item</p>
-                            </li>
-                            <li>
-                                <p>item</p>
-                            </li>
-                        </ul>
-                    </div>
+<nav id="air-localnav">
+    <div>
+        <div class="air-localnav-background"></div>
+        <div class="air-localnav-content">
+            <div class="air-localnav-title">
+                <p>AirPods</p>
+            </div>
+            <div class="air-localnav-menu">
+                <div class="air-locaknav-section">
+                    <ul class="air-localnav-items">
+                        <li>
+                            <a href="">Overview</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'airpods' %}">Tech Specs</a>
+                        </li>
+                        <li>
+                            <a href="">Compare</a>
+                        </li>
+                        <div class="air-localnav-action-button">
+                            <a href="" class="air-localnav-button">buy</a>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </div>
-        <hr id="line-air" size="3px" width="100%">
-    </nav>
+    </div>
+    <hr id="line-air" size="3px" width="920px">
+</nav>
+<main>
+    <section>
+        <div class="selection-content">
+            <div class="airimg">
+                <img src="static/main/img/airpods.jpg" alt="">
+            </div>
+        </div>
+        <hr id="line-air" size="3px" width="920px">
+    </section>
 </main>
 {% endblock %}
