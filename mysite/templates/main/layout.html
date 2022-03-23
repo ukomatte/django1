@@ -11,35 +11,28 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="{% static 'main/css/animate.min.css' %}"/>
+    <script src="{% static 'main/js/main.js' %}"></script>
+    <script src="{% static 'main/js/jquery-3.6.0.min.js' %}"></script>
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="style-top-nav">
-            <ul class="nav-button">
-                <li> <a href=""><img src="{% static 'main/img/logo.png' %}" width="18px" height="18px" alt=""></a> </li>
-                <li> <a href="{% url 'home' %}">Home</a> </li>
-                <li> <a href="{% url 'airpods' %}">Airpods</a> </li>
-                <li> <a href="{% url 'about' %}">About us</a> </li>
-                <li> <a href="{% url 'news_home' %}">News</a> </li>
-                <li> <a href="">Contacts</a> </li>
-                <li> <a href="{% url 'create' %}">Add</a> </li>
-                <li> <a href="">Support</a> </li>
-                <li> <a href="{% url 'product' %}">Product</a> </li>
-                <li> <a href=""><i class="bi bi-bag"></i></a> </li>
-                <li> <a href=""><i class="bi bi-search"></i></a> </li>
-            </ul>
+    <nav class="topnav" id="myTopnav">
+        <a href="" class="active"><img src="{% static 'main/img/logo.png' %}" width="18px" height="18px" alt=""></a>
+        <div class="topbutton"></div>    
+            <a href="{% url 'home' %}" class="">Home</a>
+            <a href="{% url 'airpods' %}">Airpods</a>
+            <a href="{% url 'iphone' %}">iPhone</a>
+            <a href="{% url 'about' %}">About us</a>
+            <a href="{% url 'news_home' %}">News</a>
+            <a href="">Contacts</a>
+            <a href="{% url 'create' %}">Add</a>
+            <a href="">Support</a>
+            <a href="{% url 'product' %}">Product</a>
+            <a href=""><i class="bi bi-bag"></i></a>
+            <a href=""><i class="bi bi-search"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </nav>
-    <nav class="homepage">
-        <ul>
-            <li>
-                <p>Shop early for the best selection of holiday favorites.
-                <a href="https://www.apple.com/store">Shop now</a>
-                </p>
-            </li>
-        </ul>
-    </nav>
+
     <main>
         {% block content %}
         {% endblock %}
@@ -103,9 +96,6 @@
             </div>
         </nav>
     </main> 
-    <script type="text/javascript" src={% static "main/js/jquery-3.6.0.min.js" %}></script>
-    <script type="text/javascript" src={% static "main/js/main.js" %}></script>
-    <script type="text/javascript" src={% static "main/js/wow.js" %}></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
     </script>
