@@ -3,8 +3,7 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<nav id="air-localnav">
-    <div>
+    <div id="air-localnav">
         <div class="air-localnav-background"></div>
         <div class="air-localnav-content">
             <div class="air-localnav-title">
@@ -17,7 +16,7 @@
                             <a href="">Overview</a>
                         </li>
                         <li>
-                            <a href="{% url 'airpods' %}">Tech Specs</a>
+                            <a href="{% url 'specs' %}">Tech Specs</a>
                         </li>
                         <li>
                             <a href="">Compare</a>
@@ -29,9 +28,8 @@
                 </div>
             </div>
         </div>
+        <hr id="line-air" size="3px" width="920px">
     </div>
-    <hr id="line-air" size="3px" width="920px">
-</nav>
 <main>
     <section>
         <div class="selection-content">

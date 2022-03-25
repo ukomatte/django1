@@ -18,7 +18,10 @@ def product(request):
     return render(request, 'main/product.html')
 
 def airpods(request):
-    return render(request, 'main/airpods.html')
+    return render(request, 'airpods/airpods.html')
+
+def specs(request):
+    return render(request, 'airpods/specs.html')
 
 def iphone(request):
     return render(request, 'main/iphone.html')

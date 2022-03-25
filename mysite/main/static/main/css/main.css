@@ -115,8 +115,13 @@ body{
   border-bottom: 1px solid rgb(129, 129, 129);
 }
 
+.topnav.responsive a:nth-child(n+2){
+    margin-left: 40px;
+}
+
 .topnav.responsive{
     background-color: black;
+    transition: 0.5s ease;
   }
 
 .topnav.responsive .dropdown {float: none;}
@@ -278,6 +283,7 @@ li {
     height: 52px;
     margin: 0;
     padding: 0;
+    margin-top: 44px;
 }
 
 #air-localnav p {margin: 0; padding: 0;}
@@ -365,4 +371,29 @@ li {
     width: 100%;
     margin-left: 30%;
     margin-right: 30%;
+}
+
+.slhigh{
+    margin-top: 44px;
+}
+
+.pt1container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.pt1{
+    
+}
+
+.pt1header{
+    text-align: center;
+}
+
+.newshome1{
+    margin-top: 44px;
+    width: 100%;
+    height: 1000px;
 }
